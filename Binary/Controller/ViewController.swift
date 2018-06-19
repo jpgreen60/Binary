@@ -17,12 +17,12 @@ class ViewController: UIViewController {
     let placeholder = NSAttributedString(string: "Enter a value...", attributes: [NSAttributedStringKey.foregroundColor: #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1), NSAttributedStringKey.font: UIFont(name: "Menlo", size: 36.0)!])
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
-       
         valueEntryTextField.attributedPlaceholder = placeholder
         valueEntryTextField.addTarget(self, action: #selector(textFieldTextDidChange), for: .editingChanged)
         disableBtns()
-        
+ 
     }
 
     @objc func textFieldTextDidChange() {
